@@ -1,0 +1,111 @@
+body{
+    cursor:none;
+}
+
+/* Main Cursor */
+
+.cursor{
+
+    position:fixed;
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,#ffb347,#ff7b00);
+
+    transform:translate(-50%,-50%);
+
+    pointer-events:none;
+
+    z-index:99999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:
+    width .3s,
+    height .3s,
+    background .3s,
+    transform .08s;
+
+    box-shadow:
+    0 0 25px rgba(255,140,0,.6),
+    0 0 60px rgba(255,140,0,.3);
+
+    mix-blend-mode:screen;
+
+}
+
+.cursor-text{
+
+    color:white;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+/* Small Dot */
+
+.cursor-dot{
+
+    position:fixed;
+
+    width:8px;
+    height:8px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%);
+
+    pointer-events:none;
+
+    z-index:100000;
+
+}
+
+/* Hover Button */
+
+.cursor.book{
+
+    width:95px;
+    height:95px;
+
+    background:#111;
+
+}
+
+.cursor.book .cursor-text{
+
+    opacity:1;
+
+}
+
+/* Hover Image */
+
+.cursor.view{
+
+    width:110px;
+    height:110px;
+
+    background:#ff8c00;
+
+}
+
+.cursor.view .cursor-text{
+
+    opacity:1;
+
+}

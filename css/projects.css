@@ -1,0 +1,142 @@
+/* ========================= */
+/* PROJECTS */
+/* ========================= */
+
+.projects{
+
+    padding:140px 9%;
+
+    background:#f7f5f1;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:90px;
+
+}
+
+.section-title span{
+
+    color:#b88e63;
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+}
+
+.section-title h2{
+
+    font-size:60px;
+
+    margin-top:20px;
+
+}
+
+.project{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    margin-bottom:140px;
+
+}
+
+.project.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+.project-image{
+
+    flex:1;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.6s;
+
+}
+
+.project-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.project-content{
+
+    flex:1;
+
+}
+
+.project-content h3{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.project-content p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.project-btn{
+
+    font-weight:600;
+
+    color:#111;
+
+    transition:.3s;
+
+}
+
+.project-btn:hover{
+
+    color:#b88e63;
+
+}
+
+@media(max-width:992px){
+
+.project,
+.project.reverse{
+
+flex-direction:column;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+}
+
+}
