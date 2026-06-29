@@ -728,3 +728,100 @@ img{
     -webkit-user-drag:none;
 
 }
+/* ==========================
+LOGO
+========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+    color:#222;
+
+}
+
+.logo img{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    transition:.4s ease;
+
+}
+
+.logo:hover img{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+.logo-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-content h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    line-height:1;
+
+}
+
+.logo-content span{
+
+    font-size:12px;
+
+    color:#888;
+
+    letter-spacing:2px;
+
+    margin-top:4px;
+
+}
+
+/* ==========================
+MENU ICON
+========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    cursor:pointer;
+
+}
+
+.menu-toggle span{
+
+    width:28px;
+
+    height:3px;
+
+    background:#222;
+
+    border-radius:20px;
+
+}
